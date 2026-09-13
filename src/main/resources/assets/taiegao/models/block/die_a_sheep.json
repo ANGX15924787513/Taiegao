@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "taiegao:block/die_a_sheep"
+  }
+}

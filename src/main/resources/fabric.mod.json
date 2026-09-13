@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "taiegao",
+  "version": "${version}",
+  "name": "Taiegao",
+  "description": "这非常恶搞",
+  "authors": ["TaylorwM","sbnato"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/taiegao/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.tay.taiegao.client.TaiegaoDataGenerator"
+    ],
+    "client": [
+      "org.tay.taiegao.client.TaiegaoClient"
+    ],
+    "main": [
+      "org.tay.taiegao.Taiegao"
+    ]
+  },
+  "mixins": [
+    "taiegao.mixins.json",
+    {
+      "config": "taiegao.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
