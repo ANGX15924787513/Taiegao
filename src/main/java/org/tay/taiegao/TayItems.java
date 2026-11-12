@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -19,6 +20,8 @@ public class TayItems {
     public static final TntGunItem TNT_GUN = new TntGunItem(new Item.Settings()
             .maxCount(1)
     );
+
+    public static final SpawnEggItem DIE_A_SHEEP_SPAWN_EGG_ITEM = new SpawnEggItem(E);
 
     public static final ItemGroup TAY_ITEM_GROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(TNT_GUN))
